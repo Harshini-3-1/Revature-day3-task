@@ -1,0 +1,14 @@
+const randomNumber = Math.floor(Math.random() * 100) + 1;
+let guess = parseInt(prompt("Guess a number between 1 and 100:"));
+let attempts = 1;
+
+while (guess !== randomNumber) {
+    if (guess < randomNumber) {
+        guess = parseInt(prompt("Too low! Try again:"));
+    } else {
+        guess = parseInt(prompt("Too high! Try again:"));
+    }
+    attempts++;
+}
+
+console.log(`Congratulations! You guessed the correct number ${randomNumber} in ${attempts} attempts.`);
