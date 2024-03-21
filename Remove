@@ -1,0 +1,6 @@
+const fruits = ["banana", "mango", "apple", "kiwi"];
+const index = fruits.indexOf("apple");
+if (index !== -1) {
+    fruits.splice(index, 1);
+}
+console.log(fruits);
